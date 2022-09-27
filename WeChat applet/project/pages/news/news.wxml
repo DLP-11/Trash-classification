@@ -1,0 +1,14 @@
+
+<view class="container">
+  <view class='img_body'>
+    <view class='img_list'>
+      <view class='img_li' wx:for="{{imglist}}" wx:key="{{index}}">
+        <image src="{{item}}"></image>
+      </view>
+      <view class='addimg' bindtap='img_w_show'>
+        <image src='../../img/add.png'></image>
+      </view>
+      <view>{{request_data}}</view>
+    </view>
+  </view>
+</view>
